@@ -1,0 +1,5 @@
+name: Trevor Clarke
+markdown: redcarpet
+pygments: true
+destination: /u3/retrev/public_html
+baseurl: /~retrev

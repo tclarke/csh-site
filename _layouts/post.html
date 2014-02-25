@@ -1,0 +1,14 @@
+---
+layout: default
+navurl: true
+---
+<div class="page" id="post"> 
+  <!-- page about -->
+  <h3 class="page_title">{{ page.title }}</h3>
+  <div class="page_content">
+    <h4 class="meta">{{ page.date | date_to_string }}</h4>
+    <div class="post">{{ content }}</div>
+    <div class="space"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>

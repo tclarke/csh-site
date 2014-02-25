@@ -1,0 +1,46 @@
+- title: Opticks
+  link: http://opticks.org
+  categories:
+  - Remote Sensing
+  - Image Processing
+  - FOSS
+  - GIS
+  - C++
+  - Python
+  content: Opticks is an expandable remote sensing and imagery analysis software platform.
+- title: COAN
+  link: https://github.com/tclarke/coan
+  categories:
+  - Remote Sensing
+  - Image Processing
+  - Video Processing
+  - Computer Vision
+  - RAW Photo
+  - SAR
+  - HSI
+  - WAMI
+  - C++
+  - Python
+  content: A number of unofficial extensions for Opticks.
+- title: WOPTICKS
+  link: https://github.com/tclarke/wopticks
+  categories:
+  - WebGL
+  - GIS
+  - HSI
+  - Python
+  - OGC
+  - WPS
+  - WCS
+  - OpenLayers
+  content: WPS/WCS/WebGL/OpenLayers based remote sensing processing demos.
+- title: JOSC
+  link: https://github.com/tclarke/josc
+  categories: [ JavaScript, OSC, WebSockets, node.js ]
+  content:  Sound Control (OSC) library for javascript including a proxy using WebSockets and node.js.
+- title: Python Rice compression
+  link: https://github.com/tclarke/ricecomp-cfitsio-python
+  categories: [ Python, Compression, FOSS ]
+  content: Cython wrapper for cfitsio Rice compession routines.
+- title: Limerock Days ebook
+  content: I've been scanning and converting one of my grandfather's books, <cite>Limerock Days</cite>, to an ebook. This is a self published title containing stories from his childhood on an old New England farm. Expect updates here when it's complete.

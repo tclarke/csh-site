@@ -1,0 +1,142 @@
+---
+layout: default
+title: Trevor R.H. Clarke
+---
+<div class="page" id="home"> 
+  <!-- page home -->
+  <div class="page_content">
+    <blockquote>
+    <p>"For a moment, nowthing happened. Then, after a second or so, nothing continued to happend."</p>
+    <cite>Douglas Adams</cite>
+    </blockquote>
+    <h2>Trevor Clarke</h2>
+    <h3>A r&eacute;sum&eacute; of me</h3>
+    <div class="one_half first multiparagraph">
+        <p>This is a landing page for me, it contains a few interests, links to my other sites, and an occasional thought or post.</p>
+        <p>It is not a professional r&eacute;sum&eacute;, linkedin handles that.</p>
+        <p>It is not a discussion site, Google+ and Facebook do a good job on that front.</p>
+        <p>It is a central location with some information on my interests and projects, both personal and professional.
+        Occasional blog posts will likely be technical but there are links to my more artistic endeavors.</p>
+    </div>
+    <div class="space"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<div class="page" id="about"> 
+  <!-- page about -->
+  <h3 class="page_title">About Me</h3>
+  <div class="page_content">
+    <div class="one_half first">
+      <div class="column_content">
+        <h4>Work</h4>
+        <img src="images/ball_logo.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>I work for <a href="http://www.ballaerospace.com/">Ball Aerospace</a>, builders of satellites, cameras,
+          and much software. I'm a software engineer working primarily for the US government. I do a lot of image processing,
+          GIS, and related work.
+          </small></p>
+      </div>
+    </div>
+    <div class="one_half last">
+      <div class="column_content">
+        <h4>CSH</h4>
+        <img src="images/csh_logo.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>I spent quite a bit of time in college living, working, and enjoying <a href="http://www.csh.rit.edu">
+          Computer Science House</a> at <a href="http://www.rit.edu">RIT</a>. Much of my love for computers, movies,
+          fun, and all things geek grew and thrived there.
+          </small></p>
+      </div>
+    </div>
+    <div class="space"> </div>
+    <div class="one_half first">
+      <div class="column_content">
+        <h4>Coding</h4>
+        <img src="images/computer.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>Python hacker, C++ pro, and occasional web weenie. I work on image processing, GIS, and remote
+          sensing softwar. I've got a soft spot for AI and have been investigating deep learning applications in
+          image processing and synthetic music.</small></p>
+      </div>
+    </div>
+    <div class="one_half last">
+      <div class="column_content">
+        <h4>Music</h4>
+        <img src="images/music.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>A one-time oboeist and clarinetist, I mostly produce electronic music in my spare time as
+          Vestigial Wang. Check out my <a href="http://vestigialwang.bandcamp.com/">bandcamp</a>,
+          <a href="https://soundcloud.com/vestigialwang">soundcloud</a>,
+          and <a href="http://www.youtube.com/vestigialwang">YouTube</a> channels.
+          </small></p>
+      </div>
+    </div>
+    <div class="space"> </div>
+    <div class="one_half first">
+      <div class="column_content">
+        <h4>Kung Fu</h4>
+        <img src="images/kung_fu.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>I've been studying <a href="http://tienshanpai.org/">Tien Shan Pai</a> kung fu at
+          <a href="http://www.tamamartialarts.com">TAMA Martial Arts</a> since 2004. I'm a black sash, instructor,
+          and I'm training to fight full contact <a href="http://en.wikipedia.org/wiki/Lei_tai">lei tai</a>.
+          You can see <a href="http://www.youtube.com/watch?v=iByQG_ZeHMQ&feature=share&list=PLJ17DmsZuhtPd4ORJgw52LpDgYlgg42-A&index=6">some</a>
+          <a href="http://www.youtube.com/watch?v=WXOvNZVasJQ&list=PLJ17DmsZuhtPd4ORJgw52LpDgYlgg42-A&feature=share&index=3">demonstrations</a>
+          at the <a href="http://www.youtube.com/channel/UCLLFCqvGsJpauBdmTjTaoAw">TAMA YouTube channel</a>.
+          </small></p>
+      </div>
+    </div>
+    <div class="one_half last">
+      <div class="column_content">
+        <h4>Skiing</h4>
+        <img src="images/skiing.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+        <p> <small>I love to ski and I used to race slalom and giant slalom. Living in the midwest, I don't ski
+          nearly as much as I used to but when I get a chance, I love going to <a href="http://alta.com">Alta</a>
+          </small></p>
+      </div>
+    </div>
+    <div class="space"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<div class="page" id="posts"> 
+  <!-- page portfolio -->
+  <h3 class="page_title"> Posts</h3>
+  <div class="page_content">
+      <div class="one_half first">
+          <div class="column_content">
+            <img src="images/beer.png" class="left no_border" alt="" style="margin-top: 10px; margin-right: 10px" />
+              <p>I occasionally post about my beer brewing exploits over at <a href="http://realmendrinkyeast.blogspot.com/">Real Men Drink Yeast</a>.</p>
+          </div>
+      </div>
+      <div class="space"> </div>
+      <div class="clear"> </div>
+      <div class="blogpost">
+        <ul>
+            {% for post in site.posts offset: 0 limit: 5 %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br/>{{ post.excerpt }}</li>
+            {% endfor %}
+        </ul>
+      </div>
+    <div class="space"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<div class="page" id="projects"> 
+  <!-- page skills -->
+  <h3 class="page_title"> Projects</h3>
+  <div class="page_content"> 
+      <ul>
+        {% for project in site.data.projects %}
+        <li>
+            <h3>{%if project.link %}<a href="{{ project.link }}">{{ project.title }}</a>{% else %}<a href="#">{{ project.title }}</a>{% endif %}</h3>
+            {{ project.content }}
+            {% if project.github or project.categories %}
+            <ul class="metadata">
+                {% if project.github %}<li><a href="{{ project.github }}">GitHub</a></li>{% endif %}
+                <li>{{ project.categories | join:', '}}</li>
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+
+    <div class="space"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
