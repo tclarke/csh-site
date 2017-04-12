@@ -1,7 +1,6 @@
 name: Trevor Clarke
 markdown: kramdown
 highlighter: pygments
-destination: /u3/retrev/public_html
 baseurl: /~retrev
 exclude:
   - livejournal_archive
