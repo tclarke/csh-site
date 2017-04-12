@@ -7,16 +7,18 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <!-- Custom CSS -->
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" media="screen" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/media-queries.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/flex-slider/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href={{ "/css/style.css" | relative_url }} media="screen" />
+    <link rel="stylesheet" href={{ "/css/infinite-spinner.css" | relative_url }} media="screen" />
+	<link rel="stylesheet" href={{ "/css/media-queries.css" | relative_url }} />
+	<link rel="stylesheet" href={{ "/flex-slider/flexslider.css" | relative_url }} type="text/css" media="screen" />
 
-	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/flex-slider/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.smooth-scroll.min.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/js/waypoints.min.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/js/setup.js"></script>
+	<script type="text/javascript" src={{ "/js/jquery-1.7.1.min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "/flex-slider/jquery.flexslider-min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "/js/jquery.isotope.min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "/js/jquery.smooth-scroll.min.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "/js/waypoints.min.js" | relative_url }}></script>
+    <script type="text/javascript" src={{ "/js/infinite-jekyll.js" | relative_url }}></script>
+	<script type="text/javascript" src={{ "/js/setup.js" | relative_url }}></script>
 
     </head>
     <body>
@@ -26,19 +28,11 @@
             <a href="#" id="logo"> <img src="http://www.gravatar.com/avatar/be08733082af58c9678787e2cbf310cc" alt="" /></a> 
             <!-- navigation menu -->
             <ul id="navigation">
-              {% if page.navurl %}
-              <li><a href="{{ site.baseurl }}#home" class="active">Home</a></li>
-              <li><a href="{{ site.baseurl }}#about">About Me</a></li>
-              <li><a href="{{ site.baseurl }}#posts">Posts</a></li>
-              <li><a href="{{ site.baseurl }}#projects">Projects</a></li>
-              <li><a href="{{ site.baseurl }}#contact">Contact</a></li>
-              {% else %}
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#posts">Posts</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              {% endif %}
+              <li><a href={{ "#home" | relative_url }} class="active">Home</a></li>
+              <li><a href={{ "#about" | relative_url }}>About Me</a></li>
+              <li><a href={{ "#posts" | relative_url }}>Posts</a></li>
+              <li><a href={{ "#projects" | relative_url }}>Projects</a></li>
+              <li><a href={{ "#contact" | relative_url }}>Contact</a></li>
             </ul>
         </div>
         <div id="container"> 
@@ -51,19 +45,19 @@
             <div class="one_half first">
               <div class="column_content">
                 <ul class="social_icons">
-                  <li><a href="http://plus.google.com/+TrevorClarke" id="g+" original-title="Google+"> <img src="{{ site.baseurl }}/images/google+.png" alt="Google+" /></a></li>
-                  <li><a href="mailto:retrev@csh.rit.edu" id="email" original-title="Email"> <img src="{{ site.baseurl }}/images/email.png" alt="Email" /></a></li>
-                  <li><a href="https://github.com/tclarke" id="gh" original-title="Github"> <img src="{{ site.baseurl }}/images/github.png" alt="Github" /></a></li>
-                  <li><a href="http://facebook.com/retrev" id="fb" original-title="Facebook Me"> <img src="{{ site.baseurl }}/images/facebook.png" alt="Facebook" /></a></li>
-                  <li><a href="https://twitter.com/retrev" id="tw" original-title="Follow Me on Twitter"> <img src="{{ site.baseurl }}/images/twitter.png" alt="Twitter" /></a></li>
-                  <li><a href="http://www.linkedin.com/pub/trevor-clarke/8/475/5b7/" id="ld" original-title="Find me on LinkedIn"> <img src="{{ site.baseurl }}/images/linkedin.png" alt="LinkedIn" /></a></li>
+                  <li><a href="http://plus.google.com/+TrevorClarke" id="g+" original-title="Google+"> <img src={{ "images/google+.png" | relative_url }} alt="Google+" /></a></li>
+                  <li><a href="mailto:retrev@csh.rit.edu" id="email" original-title="Email"> <img src={{ "images/email.png" | relative_url }} alt="Email" /></a></li>
+                  <li><a href="https://github.com/tclarke" id="gh" original-title="Github"> <img src={{ "images/github.png" | relative_url }} alt="Github" /></a></li>
+                  <li><a href="http://facebook.com/retrev" id="fb" original-title="Facebook Me"> <img src={{ "images/facebook.png" | relative_url }} alt="Facebook" /></a></li>
+                  <li><a href="https://twitter.com/retrev" id="tw" original-title="Follow Me on Twitter"> <img src={{ "images/twitter.png" | relative_url }} alt="Twitter" /></a></li>
+                  <li><a href="http://www.linkedin.com/pub/trevor-clarke/8/475/5b7/" id="ld" original-title="Find me on LinkedIn"> <img src={{ "images/linkedin.png" | relative_url }} alt="LinkedIn" /></a></li>
                 </ul>
               </div>
             </div>
 	    <div class="space"> </div>
             <div class="one_half first">
               <div class="column_content">
-                <img src="images/location.png" class="left no_border" alt="" />
+                <img src={{ "images/location.png" | relative_url }} class="left no_border" alt="" />
                 <small>candy.cable.dome</small>
               </div>
             </div>

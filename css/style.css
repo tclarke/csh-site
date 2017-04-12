@@ -18,9 +18,29 @@ cite {
     list-style-type: none;
     margin-bottom: 2em;
 }
+.post {
+    margin-top: 2ex;
+}
+.post p {
+	margin-bottom: 1.25ex;
+}
 .metadata li {
     color: #cfcfcf;
     font-size: 75%;
+}
+.post-meta {
+	font-weight: bold;
+}
+ul.taglist {
+	display: inline;
+	list-style: none;
+}
+ul.taglist li {
+	display: inline;
+	padding-left: 0;
+}
+ul.taglist li + li:before {
+	content: ", ";
 }
 .multiparagraph p {
     margin-bottom: 1em;
@@ -424,8 +444,11 @@ fieldset#contact_form button, .right {
 div.misc a, a:hover {
 	text-decoration:none
 }
+div.blogpost {
+	padding: 2ex;
+}
 div.blogpost a.readmore:hover, ul.pagination a:hover, ul.pagination a.active_page {
-	background:url(./images/bg/50.png);
+	background:url("images/bg/50.png");
 	color:#FFF
 }
 ol.comments li.comment a.reply:hover, div.tab ul.tab_menu li:hover, div.tab ul.tab_menu li.active {
@@ -642,4 +665,15 @@ ul.sublist li a:hover {
 }
 .flex-control-nav {
 	display:none;
+}
+.lj-comments {
+    background-color: #84bbdb;
+    border-style: inset;
+    border-width: medium;
+    border-color: #0D4667;
+    max-height: 40ex;
+    overflow-y: auto;
+}
+#summary {
+    display: none;
 }

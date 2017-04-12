@@ -1,0 +1,18 @@
+---
+layout: default
+title: All Blog Posts
+---
+<div class="page" id="all-posts">
+  <h3 class="page_title"> Posts</h3>
+  <div class="page_content">
+    <ul class="post-list">
+      {% for post in site.posts limit: 10 %}
+      <li><div class="blogpost"><span class="metadata post-meta">{{ post.date | date_to_string }} &raquo; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></span><br/>
+        <span class="metadata post-meta">Tags: </span>
+            <ul class="taglist"> {% for tag in post.categories %}<li><a href="{{ tag | relative_url }}">{{ tag }}</a></li>{% endfor %}</ul><br/>
+        <p>{{ post.excerpt }}</p></div></li>
+      {% endfor %}
+    </ul>
+    <div class="infinite-spinner"></div>
+  </div>
+</div>

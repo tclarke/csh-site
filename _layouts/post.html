@@ -1,14 +1,21 @@
 ---
 layout: default
-navurl: true
 ---
-<div class="page" id="post"> 
-  <!-- page about -->
+<div class="page" id="post">
+  <div id="summary">
+    <div class="blogpost"><span class="metadata post-meta">{{ page.date | date_to_string }} &raquo; <a href="{{ page.url | relative_url }}">{{ page.title }}</a></span><br/>
+        <span class="metadata post-meta">Tags: </span>
+            <ul class="taglist"> {% for tag in page.categories %}<li><a href="{{ tag | relative_url }}">{{ tag }}</a></li>{% endfor %}</ul><br/>
+        <p>{{ page.excerpt }}</p></div>
+  </div>
   <h3 class="page_title">{{ page.title }}</h3>
   <div class="page_content">
-    <h4 class="meta">{{ page.date | date_to_string }}</h4>
+    <h4 class="metadata">{{ page.date | date_to_string }}</h4>
+    {% if page.lj_id %}<h5 class="metadata">Livejournal ID: {{ page.lj_id }}</h5>{% endif %}
+    {% if page.lj_slug %}<h5 class="metadata">Livejournal slug: {{ page.lj_slug }}</h5>{% endif %}
     <div class="post">{{ content }}</div>
     <div class="space"> </div>
     <div class="clear"> </div>
   </div>
+
 </div>
